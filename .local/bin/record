@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+
+term="st -T Record"
+
+case "$(printf "Record-Video\nWebcam" | dmenu -l 20 -i)" in
+	'Record-Video')  $term bash /home/$USER/.local/share/record/scripts/record.bash ;;
+#	'Record-Audio') $term bash /home/$USER/.local/share/record/scripts/audio.bash  ;;
+	'Webcam') ffplay -window_title Webcam -fast /dev/video0 ;;
+
+	*) exit 1 ;;
+esac

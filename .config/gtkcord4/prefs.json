@@ -1,0 +1,16 @@
+{
+	"application/play-notification-sound": true,
+	"application/show-notifications": true,
+	"composer/rich-preview": true,
+	"composer/send-message-on-enter": true,
+	"composer/show-all-emojis": true,
+	"discord/override-member-colors": false,
+	"messages/blocked-users": null,
+	"messages/messages-width": 800,
+	"messages/show-blocked-messages": false,
+	"text/code-highlight-style": "",
+	"text/collapsed-codeblock-height": 200,
+	"text/expanded-codeblock-height": 400,
+	"text/fixed-codeblock": false,
+	"text/tab-width": 3
+}

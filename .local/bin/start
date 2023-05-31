@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+
+# Python Imports
+import os
+
+# Starts 'X' with script.
+os.system("startx")
+os.system("~/.xinitrc")

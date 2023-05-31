@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+
+# Python imports
+import os
+
+# A dmenu wrapper script for system functions.
+os.system("case \"$(printf \"NMTUI\nSpotify-Adblock\nDiscord\nSSH\" | dmenu -l 20 -i )\" in 'NMTUI') alacritty -e nmtui ;; 'Spotify-Adblock') spotify-adblock ;; 'Discord') webcord ;; 'SSH') ~/.local/bin/sshapp/sshp ;; esac")

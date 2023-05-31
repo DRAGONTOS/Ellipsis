@@ -1,0 +1,41 @@
+#---System Control---#
+# Restart hotkey damon
+super + shift + x
+  killall sxhkd && sxhkd &
+super + Return
+  kitty &
+super + b
+  firefox &
+XF86MonBrightnessUp
+  light -A 10 &
+XF86MonBrightnessDown
+  light -U 10 &
+XF86AudioRaiseVolume
+  pactl set-sink-volume 0 +10%
+XF86AudioLowerVolume
+  pactl set-sink-volume 0 -10%
+XF86AudioMute
+  pactl set-sink-mute 0 toggle
+super + F8
+  st -e pulsemixer
+super + alt + F4
+  slock loginctl suspend -i
+## ?
+super + shift + F8
+  st -e btop &
+super + F10
+  st -e sudo dmenumount &
+super + shift + F10
+  st -e sudo dmenuumount &
+super + F7
+  obs &
+super + shift + Up
+  ~/.local/bin/volumectl.sh
+super + shift + a
+  ~/.local/bin/application
+super + shift + BackSpace
+  ~/.local/bin/sysact.sh
+Print
+  flameshot gui
+super + F6
+  displayselect

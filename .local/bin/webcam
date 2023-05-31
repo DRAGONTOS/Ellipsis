@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+#
+## Webcam Script
+st -e ffplay -window_title Webcam -fast /dev/video0
